@@ -2,6 +2,11 @@
 Useful linux scripts
 ### Docker and compose installation 
 ```sh
+
+curl -fsSL get.docker.com -o get-docker.sh
+ sudo sh get-docker.sh
+
+#### Depricated
 sudo apt-get update
 sudo apt-get install \
     apt-transport-https \
