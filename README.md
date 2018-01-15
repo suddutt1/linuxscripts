@@ -1,8 +1,9 @@
 # Useful Linux Scripts
 Useful linux scripts
 
-```sh
+
 ## Add a new user in the system and giving sudo access
+```sh
 adduser suddutt1
 usermod -aG sudo suddutt1
 su - suddutt1
@@ -29,7 +30,9 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
+```
 #### Depricated
+```sh
 sudo apt-get update
 sudo apt-get install \
     apt-transport-https \
@@ -45,7 +48,5 @@ sudo add-apt-repository \
 sudo apt-get update
 
 sudo apt-get install docker-ce
-
-
 
 ```
