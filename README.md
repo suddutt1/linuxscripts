@@ -46,6 +46,8 @@ apt install python
 apt install make
 apt install g++
 npm install -g node-gyp
+npm install typescript
+
 ```
 
 ## Docker trouble shooting
