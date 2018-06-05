@@ -38,13 +38,14 @@ docker-compose --version
 ```sh
 
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-apt-get install nodejs
-apt-get install git
-apt install tree
-apt install openssl
-apt install python
-apt install make
-apt install g++
+sudo apt-get install nodejs
+sudo apt-get install git
+sudo apt install tree
+sudo apt install openssl
+sudo apt install python
+sudo apt install make
+sudo apt install g++
+sudo apt install libtool libltdl-dev 
 npm install -g node-gyp
 npm install typescript
 
