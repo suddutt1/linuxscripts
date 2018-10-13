@@ -33,12 +33,31 @@ docker-compose --version
 
 ```
 ## Other useful tools installation
-### Installing Nodejs git and other nodejs related prereqites
+### Installing Nodejs 8.12.0
+```sh
+curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
+VERSION=node_8.x
+DISTRO="$(lsb_release -s -c)"
+echo "deb https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /etc/apt/sources.list.d/nodesource.list
+
+```
+### Inatalling Node 10.x
+```sh
+curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
+VERSION=node_10.x
+DISTRO="$(lsb_release -s -c)"
+echo "deb https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /etc/apt/sources.list.d/nodesource.list
+
+
+```
+
+### Installtion git and other nodejs related prereqites
 
 ```sh
 
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install nodejs
+
 sudo apt-get install git
 sudo apt install tree
 sudo apt install openssl
