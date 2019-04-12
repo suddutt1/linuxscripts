@@ -20,7 +20,7 @@ nano /etc/ssh/sshd_config
 ```sh
 service ssh restart
 ```
-# Hyperledger Fabric Persistenent voiume directories
+# Hyperledger Fabric Persistenent volume directories
 
 ```sh
 - backup_couch:/opt/couchdb/data
