@@ -20,7 +20,13 @@ nano /etc/ssh/sshd_config
 ```sh
 service ssh restart
 ```
+# Hyperledger Fabric Persistenent voiume directories
 
+```sh
+- backup_couch:/opt/couchdb/data
+- backup_peer:/var/hyperledger/production
+- backup_orderer:/var/hyperledger/production/orderer
+```
 
 ## Docker installation 
 ```sh
